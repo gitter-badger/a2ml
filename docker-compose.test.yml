@@ -32,6 +32,7 @@ services:
       /usr/bin/mc mb myminio/sample-bucket;
       /usr/bin/mc policy set upload myminio/sample-bucket;
       /usr/bin/mc cp /data/iris.csv myminio/sample-bucket/workspace/projects/a2ml-app/files/;
+      /usr/bin/mc cp /data/iris_for_predict.csv myminio/sample-bucket/workspace/projects/a2ml-app/files/;
       "
     volumes:
       - ./tests/fixtures/:/data/
